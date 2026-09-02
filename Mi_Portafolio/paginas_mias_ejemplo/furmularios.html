@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formularios html</title>
+  </head>
+  <body>
+    <div>
+      <h1>Formularios HTML</h1>
+
+      <form
+        action="https://formtester.goodbytes.be/post.php"
+        target="_blank"
+        method="post"
+      >
+        <br />
+        <label for="nombre_usuario">Nombre:</label>
+        <input type="text" id="nombre_usuario" name="nombre" required />
+        <br />
+        <label for="apellidos_usuarios">Apellidos:</label>
+        <input type="text" id="apellidos_usuarios" name="appellidos" required />
+        <br />
+        <label for="email_usuario">email:</label>
+        <input type="email" id="email_usuario" name="email" required />
+        <br />
+        <label for="genero_usuario">Genero:</label>
+        <select name="genero">
+          <option>hombre</option>
+          <option>mujer</option>
+        </select>
+        <br />
+        <br />
+        <br />
+        <div>
+          <!--el for es para conectarla con id y cuando hace clic en el texto se seleccione el campo-->
+          <!--el name en imput de tipo radio solo deja escojer una opcion-->
+          <p>Elige tu color favorito</p>
+          <input type="radio" id="color_1" name="color_ favorito" />
+          <label for="color_1">Azul</label>
+
+          <input type="radio" id="color_2" name="color_ favorito" />
+          <label for="color_2">Rojo</label>
+
+          <input type="radio" id="color_3" name="color_ favorito" />
+          <label for="color_3">Amarillo</label>
+
+          <input type="radio" id="color_4" name="color_ favorito" />
+          <label for="color_4">Verde</label>
+        </div>
+        <br>
+        <br>
+        <div>
+          <label for="text_area_prueba">Descripcion del usuario</label>
+          <textarea id="text_area_prueba" name="descripcion_usuario" rows="1">
+            texto por default
+          </textarea>
+        </div>
+        <br>
+        <br>
+        <div>
+          <p>Elije tus comidas favoritas</p>
+          <input type="checkbox" id="hamburguesa" name="hamburguesa" />
+          <label for="hamburguesa">hamburguesa</label>
+
+          <input type="checkbox" id="pizza" name="pizza" />
+          <label for="pizza">pizza</label>
+
+          <input type="checkbox" id="sushi" name="sushi" />
+          <label for="sushi">sushi</label>
+
+          <input type="checkbox" id="pasta" name="pasta" />
+          <label for="pasta">pasta</label>
+        </div>
+        <div>
+          <h2>Imput tipo file individual</h2>
+          <label for="user_file">Selecciona un archivo:</label>
+          <input type="file" id="user_file_1" name="archivo_usuario_1" />
+        </div>
+        <div>
+          <h2>Imput tipo file multiple</h2>
+          <label for="user_file">Selecciona un archivo:</label>
+          <input
+            type="file"
+            id="user_file_2"
+            name="archivo_usuario_2"
+            multiple
+          />
+        </div>
+        <div>
+          <h2>Imput tipo file que admite solo ciertas extensiones</h2>
+          <label for="user_file">Selecciona un archivo:</label>
+          <!--<input type="file" id="user_file" name="archivo_usuario" accept="image/*"/>  
+             PARA DAR POR DEFAULT SOLO ARCHIVOS IMG (imagenes) POR EJEMPLO-->
+          <input
+            type="file"
+            id="user_file_3"
+            name="archivo_usuario_3"
+            accept="application/pdf"
+          />
+          <!--sOLO ARCHIVOS PDF-->
+        </div>
+        <br/>
+        <br>
+        <button>Enviar informacion</button>
+        <input type="submit" value="enviar informacion por post" id="" />
+      </form>
+    </div>
+  </body>
+</html>

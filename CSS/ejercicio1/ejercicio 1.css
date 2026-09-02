@@ -1,0 +1,66 @@
+#parrafo_4 {
+  background-color: yellow;
+}
+#parrafos_estilos {
+  color: black;
+}
+.letras_negritas {
+  font-weight: bold;
+  /*font-size: 20px;*/
+  font-size: 2rem;
+}
+#id_para_test_modelo_de_cajas {
+  background-color: gray;
+  padding: 10px;
+  padding-left: 30px;
+  border-width: 15px;
+  border-style: dashed;
+  margin: 20px;
+}
+.div-hijo {
+  background-color: blue;
+  width: 60px;
+  margin: 10px;
+}
+#div-padre {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row; /*el default esta en rou*/
+  flex-wrap: wrap;
+}
+
+#div-con-box-shadow {
+  background-color: aquamarine;
+  margin: 50px;
+  height: 100px;
+  box-shadow: 5px 5px blue;
+  border-radius: 50px;
+}
+
+#span_con_text_shadow {
+  margin: 30px;
+  font-size: 50px;
+  color: blue;
+  text-shadow: 3px 3px red;
+}
+#di_circulo {
+  background-color: blue;
+  margin: 50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+#div_con_gradiente {
+  margin: 50px;
+  height: 100px;
+  background: rgb(red, green, blue);
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 40%,
+    rgba(154, 209, 111, 1) 67%,
+    rgba(192, 214, 98, 1) 82%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  border-radius: 50px;
+}

@@ -1,0 +1,14 @@
+#titulo{
+     font-family: "Black Ops One", "Arial";
+      font-size: 36px;
+      padding: 10px;
+}
+.parrafo{
+    color: #1E5A9C;
+      font-weight: bold;
+}
+.container{
+    background-color: #7FC4F2;
+    text-align: center;
+    padding: 30px;
+}

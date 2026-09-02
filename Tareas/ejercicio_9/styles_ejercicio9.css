@@ -1,0 +1,23 @@
+.caja{
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 8px greenyellow;
+    text-align: center;
+    color: white;
+}
+.roja{
+    background-color: red;
+    width: 300px;
+    height: 200px;
+}
+.verde{
+    background-color: green;
+    width: 250px;
+    height: 150px;
+}
+.azul{
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+}

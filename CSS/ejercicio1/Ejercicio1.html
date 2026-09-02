@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejercicio inicial CSS</title>
+    <meta charset="UTF-8" />
+    <style>
+      h1 {
+        color: blue;
+      }
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      p {
+        color: blueviolet;
+      }
+
+      .grupo_b_parrafo {
+        color: orange;
+      }
+      .grupo_a_parrafo {
+        text-decoration: underline;
+      }
+
+      #parrafo_3 {
+        color: green !important;
+      }
+    </style>
+    <link rel="stylesheet" href="./ejercicio 1.css" />
+  </head>
+  <body>
+    <h1>Título de prueba</h1>
+    <h2>subtitulo de prueba</h2>
+    <h1>Titulo de prueba 2</h1>
+    <p id="parrafo_1" style="color: blue; font-size: 15px">parrafo 1</p>
+    <p id="parrafo_2" class="grupo_a_parrafo">parrafo 2</p>
+    <p id="parrafo_3" class="grupo_a_parrafo miParrafoDePrueba">parrafo 3</p>
+    <p id="parrafo_4" class="grupo_b_parrafo">parrafo 4</p>
+    <p id="parrafo_5" class="grupo_b_parrafo">parrafo 5</p>
+
+    <p>Hola 1</p>
+    <p>Hola 2</p>
+    <p>HOla 3</p>
+
+    <div style="color: red">
+      <div style="color: brown">div dentro de otro div</div>
+
+      <div>
+        <h2>Estilos de fuente</h2>
+        <p id="parrafos_estilos">
+          Este parrafo tiene el siguiente
+          <span class="letras_negritas">texto</span> que se va a personalizar
+        </p>
+      </div>
+      <div>
+        <div>
+          <h2>Mdelo de cajas</h2>
+          <h3>Display: Elemntos html con display block or inline</h3>
+          <p>Parrafo 1 con display block</p>
+
+          <p>parrafo 2 con diplay block</p>
+
+          <button>boton 1 de prueba</button>
+          <button>boton 2 de prueba</button>
+        </div>
+      </div>
+
+      <div>
+        <h3>modelo de cajas: margin , contenido , border , padding</h3>
+        <div>Este div no tendra CSS</div>
+        <div id="id_para_test_modelo_de_cajas">
+          Este div tiene el sigiente contenido
+        </div>
+        <div>Este deiv no tendra CSS</div>
+      </div>
+    </div>
+
+    <div>
+      <h3>Display Flex</h3>
+      <div id="div-padre">
+        <div class="div-hijo">Div 1</div>
+        <div class="div-hijo">Div 2</div>
+        <div class="div-hijo">Div 3</div>
+        <div style="margin-left: 50px" class="div-hijo">Div 4</div>
+        <div class="div-hijo">Div 5</div>
+        <div class="div-hijo">Div 6</div>
+        <div class="div-hijo">Div 7</div>
+        <div class="div-hijo" style="width: 400px">Div 8</div>
+        <div class="div-hijo">Div 9</div>
+        <div class="div-hijo">Div 10</div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Box Shadow, text Shadow, border-radius y gradient</h2>
+      <div id="div-con-box-shadow">
+        <span id="span_con_text_shadow">Este texto tiene Shadow</span>
+      </div>
+
+      <div id="di_circulo"></div>
+      <div id="div_con_gradiente"></div>
+    </div>
+  </body>
+</html>
+
+<!-- . para class -->
+<!-- # para id -->
+<!-- display block ocupa toda la linea-->
+<!--display inline no ocupa toda la linea-->

@@ -1,0 +1,65 @@
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+body {
+  background-color: #88c9c4;
+}
+.btn-primary {
+  background-color: #20666b;
+  border-color: #0c3b45;
+  color: #cff0ea;
+}
+.btn-secondary {
+  background-color: #88c9c4;
+  border-color: #20666b;
+  color: #20666b;
+}
+.btn-primary:hover {
+  background-color: #cff0ea !important;
+  border-color: #20666b !important;
+  color: #20666b !important;
+  border: 2px solid !important;
+  font-weight: bold !important;
+  font-family: "Bitcount Grid Double", Arial !important;
+}
+.btn-secondary:hover {
+  background-color: #20666b !important;
+  border-color: #0c3b45 !important;
+  color: #cff0ea !important;
+  border: 2px solid !important;
+  font-family: "Bitcount Grid Double", Arial !important;
+}
+h1 {
+  font-family: "Cormorant Garamond", Arial;
+  font-weight: bold;
+  color: #0c3b45;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  font-size: 55px;
+}
+.letra-puntos {
+  font-family: "Bitcount Grid Double", Arial;
+  color: #0c3b45;
+}
+.alert-info {
+  background-color: #cff0ea;
+  border: 2px solid #0c3b45;
+  font-size: 18px;
+}
+.card {
+  border-color: #0c3b45;
+  margin: auto;
+}
+.card h5 {
+  font-family: "Cormorant Garamond", Arial;
+  font-weight: bold;
+}
+.card a {
+  font-family: "Cormorant Garamond", Arial;
+}
+.button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
