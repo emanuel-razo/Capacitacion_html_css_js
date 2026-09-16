@@ -140,6 +140,7 @@ function impromirNombreEnDocumentoA(nombreAlumno){
 }
 */
 
+
 function FuncionDeCalcular (num1, num2, num3){
     
     //linea 1
@@ -151,8 +152,9 @@ function FuncionDeCalcular (num1, num2, num3){
     */
 
     //forma B , regresar solamente el resultado
-    retur ((numero1+numero2)* numero3)-2;
+    return ((num1+num2)* num3)-2;
 }
+console.log("****Operaciones usando una funcion****")
 
 var resultado_calculo1 = FuncionDeCalcular(n1,n2,n3);
 console.log("al_resultado_calculo1= ", resultado_calculo1);
@@ -168,3 +170,72 @@ console.log("al_resultado_calculo4= ", resultado_calculo4);
 
 var resultado_calculo5 = FuncionDeCalcular(11,22,23);
 console.log("al_resultado_calculo5= ", resultado_calculo5);
+
+//Funcion para calcular area de circulo//
+
+var area_circulo_1 = 3.1416 * ( (3) * (3) );
+var area_circulo_2 = 3.1416 * ( (2) * (2) );
+var area_circulo_3 = 3.1416 * ( (1) * (1) );
+var area_circulo_4 = 3.1416 * ( (4) * (4) );
+var area_circulo_5 = 3.1416 * ( (6) * (6) );
+var area_circulo_6 = 3.1416 * ( (7) * (7) );
+
+console.log ("**Area de circulo sin funciones**");
+
+console.log("El area del circulo 1 de radio 3 =",area_circulo_1);
+console.log("El area del circulo 2 de radio 2 =",area_circulo_2);
+console.log("El area del circulo 3 de radio 1 =",area_circulo_3);
+console.log("El area del circulo 4 de radio 4 =",area_circulo_4);
+console.log("El area del circulo 5 de radio 6 =",area_circulo_5);
+console.log("El area del circulo 6 de radio 7 =",area_circulo_6);
+
+console.log ("**Area de circulo con funciones**");
+
+function calcularAreaCirculo (radio) {
+    
+    return 3.1416 * ((radio) * (radio));
+}
+
+var area_circulo_f_1 = calcularAreaCirculo(3);
+var area_circulo_f_2 = calcularAreaCirculo(2);
+var area_circulo_f_3 = calcularAreaCirculo(1);
+var area_circulo_f_4 = calcularAreaCirculo(4);
+var area_circulo_f_5 = calcularAreaCirculo(6);
+var area_circulo_f_6 = calcularAreaCirculo(7);
+
+console.log("El area del circulo 1 de radio 3 =", area_circulo_f_1);
+console.log("El area del circulo 2 de radio 2 =", area_circulo_f_2);
+console.log("El area del circulo 3 de radio 1 =", area_circulo_f_3);
+console.log("El area del circulo 4 de radio 4 =", area_circulo_f_4);
+console.log("El area del circulo 5 de radio 6 =", area_circulo_f_5);
+console.log("El area del circulo 6 de radio 7 =", area_circulo_f_6);
+
+console.log("*****Ver si usuario esta disponible******");
+
+function checkDisponibilidadUsername(userName) {
+    let nombresYausados = ['luis15','DarthVader','Coco'];
+
+    //var elNombreEstaDisponible = true;
+    var yaExisteElNombre = nombresYausados.includes(userName);
+    //var yaExisteElNombre = false;
+
+    //var elNombreEstaDisponible = false;
+var elNombreEstaDisponible = !yaExisteElNombre;
+
+//Revisar si userName esta disponible 
+
+//si esta disponible 'Esta disponible';
+//si NO esta disponible 'No esta disponible';
+
+if(elNombreEstaDisponible) {    //se emite el igual a true if(elNombreEstaDisponible == true)
+    return userName + '  Esta disponible';
+} else {
+    return userName + '  No esta disponible';
+}
+}
+
+var usuario1 = 'mike25';
+
+console.log( checkDisponibilidadUsername(usuario1));
+console.log( checkDisponibilidadUsername("luis15"));
+console.log( checkDisponibilidadUsername("goku23"));
