@@ -75,6 +75,62 @@ console.log("Recorrer Array con metodo de foreach");
 //let arregloColores1 = [elemeto1,elemento2];
 arregloColore1.forEach(function(valorAccedido, i, array){
     console.log("El color es: ", valorAccedido );
+     console.log("La posicion del color en el erreglo es: ", i);
     console.log("El color MAYUSCULA es: ", valorAccedido.toUpperCase() );
 });
+
+
+console.log("Ciclo WHILE para contar del 0 a un numero en especifico");
+n = 0;
+while(n < 100) {
+    console.log("El numero es: " + n);
+    n++; // n + n + 1;
+}
+
+
+console.log("Ciclo WHILE, ejemplo para recorrer un ARRAY")
+//Similar al ciclo "For 1" el ciclo "while" tambien primero revisa
+//Que la condicion se cumple antes de entrar
+posicionColor = 0;
+while(posicionColor < arregloColore1.length) {
+    console.log("el color es: ", arregloColore1[posicionColor] );
+    // tambien haz algo mas
+    // tambien haz algo mas 
+    // tambien haz algo mas 
+    // tambien haz algo mas 
+    
+    posicionColor++;
+}
+
+
+//***************diferencias del "WHILE" y del "do while" */
+/**
+ Este es el while :
+ while(){
  
+ }
+
+ este es el while, obligatoriamente al menos una vez entra, luego verifica si puede volver a entrar:
+ do{
+ 
+ }while{}
+ */
+
+ let numero = 5;
+
+ while(numero < 5) {
+    console.log ("Este numero es mayor a 5 ");
+    numero++;
+ }
+
+ console.log ("termino el while de ejemplo");
+
+ let numero2 = 5;
+ do{
+    console.log ("Este se imprime a la fuerza la primer vez. numero2: " , numero2);
+    numero2++;
+
+ } while(numero2 < 5);
+
+ console.log ("termino el do while de ejemplo");
+
