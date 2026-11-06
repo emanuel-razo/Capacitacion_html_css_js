@@ -1,24 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
-    <title> EJETCICO 4</title>
-    <meta charset="UTF-8">
+    <title>EJETCICO 4</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
     <h2>EJERCICIO 4</h2>
 
     <div>
-        <button>Boton de prueba sin funcionalidad aun </button>
-        <button onclick="onClickButtonPrueba()">Da clic en este boton y ve lo que sucede</button>
-        <!--A donde o que debe hacer cuando se hace el evento onclic ???  => llama al evento [a]-->
+      <button>Boton de prueba sin funcionalidad aun</button>
+      <button onclick="onClickButtonPrueba()">
+        Da clic en este boton y ve lo que sucede
+      </button>
+      <!--A donde o que debe hacer cuando se hace el evento onclic ???  => llama al evento [a]-->
     </div>
 
     <div>
       <p id="parrafo_1_js">
-        Este parrafo es para visualizar el cambio mediante el uso de JS 
-        <span style="font-weight: bold;">Esto esta en negritras</span>
+        Este parrafo es para visualizar el cambio mediante el uso de JS
+        <span style="font-weight: bold">Esto esta en negritras</span>
       </p>
     </div>
+
+    <div>
+      <button onclick="onCambiarImagen()">Cambiar la imagen</button>
+    </div>
+    <img
+      style="width: 300px"
+      id="img_prueba"
+      src="https://images.ctfassets.net/8zlbnewncp6f/6ICKtYDS5xxeQLZoV9PovO/6a03d969aad4b58313b8f46aa9ed23b1/CF_Moto_450NK_G2_Imagen_principal_Galgo.jpg?w=600&fm=webp&q=90"
+    />
+
+    <div>
+      <button onclick="onCambiarColor()">
+        Da clic en este boton para cambiar de color el div
+      </button>
+    </div>
+    <div id="div_color_prueba" class="" ></div>
+
     <script type="text/javascript" src="./index.js"></script>
   </body>
-</html>  
+</html>
