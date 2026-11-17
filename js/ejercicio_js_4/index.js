@@ -53,5 +53,29 @@ function onCambiarColor() {
     var colorElegidoAleatorio = arrayColores[posicion];
     console.log("ColorElegidoAleatorio: ", colorElegidoAleatorio);
 
-   
+    //(document.getElementById("div_color_prueba")).innerHTML;
+    //(document.getElementById("div_color_prueba")).src;
+    //(document.getElementById("div_color_prueba")).style.backgroundColor = 'blue';
+    (document.getElementById("div_color_prueba")).style.backgroundColor = colorElegidoAleatorio;
+    (document.getElementById("div_color_prueba")).style.width = "400px";
 }
+
+function onCambiarColorHex() {
+    console.log("***********onCambiarColorHex()")
+
+    var numeroAleatorio = Math.random();
+    console.log("numeroAleatorio: ", numeroAleatorio);
+
+    var numeroAleatorioFinal = numeroAleatorio * 16777215;
+    console.log ("numeroAleatorioFinal: ", numeroAleatorioFinal);
+
+    var parteEnteraNumeroAleatorioFinal = Math.floor(numeroAleatorioFinal);
+    console.log("parteEnteraNumeroAleatorioFinal: ", parteEnteraNumeroAleatorioFinal);
+
+    var colorAleatorioHexadecima = parteEnteraNumeroAleatorioFinal.toString(16);
+    console.log("colorAleatorioHexadecima: ", colorAleatorioHexadecima);
+
+    document.getElementById('div_color_hex_prueba').style.backgroundColor = "#" + colorAleatorioHexadecima;
+}
+
+
